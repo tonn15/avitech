@@ -1,19 +1,335 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
-        {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
-        {% endblock %}
+<html lang="en">
+<head>
 
-        {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+     <title>Avitech</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/aos.css">
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/templatemo-digital-trend.css">
+
+</head>
+<body>
+
+     <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg home" >
+        <div class="container">
+            <a class="navbar-brand" href="home">
+              {# <i class="fa fa-line-chart"></i>
+              Avitech #}
+              <img src="images/icon/avitech-carré.jpg" style="height: auto;border-radius: 100%;width: 173px;top: 48px;position: relative;" class="go">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link smoothScroll">Studio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link smoothScroll">Nos services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact" class="nav-link contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+     <!-- HERO -->
+     <section class="hero hero-bg d-flex justify-content-center align-items-center marg">
+               <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                              <div class="hero-text" data-aos="fade-up" style="background: #ffc107;border-radius: 14px;padding: 22px;">
+
+                                   <h1 class="text-white pl-5" data-aos="fade-up" style="font-size:26px">Création et amélioration de site Web pour les sociétés, les entreprises, les indépendants Animation de vos pages sur les réseaux sociaux</h1>
+
+                                   <a href="contact" class="custom-btn btn-bg btn mt-3 " data-aos="fade-up" data-aos-delay="100" style="background-color: #00ff7e;">Message</a>
+
+                                   <strong class="d-block py-3  text-white" data-aos="fade-up" data-aos-delay="200" style="color: #f8f9fa  !important;" ><i class="fa fa-phone mr-2"></i> +261 34 21 208 03</strong>
+                              </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                          <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+
+                            <img src="images/working-girl.png" class="img-fluid" alt="working girl">
+                          </div>
+                        </div>
+
+                    </div>
+               </div>
+     </section>
+
+     {# <div class="text-center" >
+		<div style="width: 20px;height: 20px;background-color: black; border-radius:100%; position: absolute; top: 160px; left: -210px;" id="point">
+					
+		</div>
+		<div style="width: 20px;height: 20px;background-color: black; border-radius:100%; position: absolute; top: 160px; left: 1440px;" id="point2">
+					
+		</div>
+		<div style="width: 20px;height: 20px;background-color: rgb(116,21,232); border-radius:100%; position: absolute; top: 160px; left: 620px;" id="point3">
+					
+		</div>
+		<div style="width: 20px;height: 20px;background-color: red; border-radius:100%; position: absolute; top: 160px; left: 600px;" id="point4">
+					
+		</div>
+		<div style="width: 20px;height: 20px;background-color:yellow ; border-radius:100%; position: absolute; top: 160px; left: 640px;" id="point5">
+					
+		</div>
+		<div style="width: 20px;height: 20px;background-color: orange; border-radius:100%; position: absolute; top: 160px; left: 660px;" id="point6">
+					
+		</div>
+
+	</div> #}
+
+
+     <!-- ABOUT -->
+     <section class="about section-padding pb-0" id="about">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-7 mx-auto col-md-10 col-12">
+                         <div class="about-info">
+
+                              <h2 class="mb-4" data-aos="fade-up">L'un des meilleurs <strong>Agence de digitalisation</strong> à Antananarivo</h2>
+
+                              <p class="mb-0" data-aos="fade-up">Envie de plonger dans le marcher international! <a href="https://web.facebook.com/AviTech-101030916000428">Avitech</a> est là pour vous servire de A à Z. 
+                              <br><br>Qu'est ce que vous attendez? Parlons-en! ne perdez plus de temps. Contacter AviTech dès maintenant, dès aujourd'hui, qui que vous soyez  ! </p>
+                         </div>
+
+                         <div class="about-image" data-aos="fade-up" data-aos-delay="200">
+
+                          <img src="images/office.png" class="img-fluid" alt="office">
+                        </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- PROJECT -->
+     <section class="project section-padding" id="project">
+          <div class="container-fluid">
+               <div class="row">
+
+                    <div class="col-lg-12 col-12">
+
+                        <h2 class="mb-5 text-center" data-aos="fade-up">
+                            Prenez juste une minute pour découvrire 
+                            <strong>le monde de la digitalisation!</strong>
+                        </h2>
+
+                         <div class="owl-carousel owl-theme" id="project-slide">
+                              <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
+                                   <img src="images/project/project-image01.jpg" class="img-fluid" alt="project image">
+
+                                   <div class="project-info">
+                                        <small>Digitalisation</small>
+
+                                        <h3>
+                                             <a href="service">
+                                                  <span>C'est qoui ?</span>
+                                                  <i class="fa fa-angle-right project-icon"></i>
+                                             </a>
+                                        </h3>
+                                   </div>
+                              </div>
+
+                              <div class="item project-wrapper" data-aos="fade-up">
+                                   <img src="images/project/project-image02.jpg" class="img-fluid" alt="project image">
+
+                                   <div class="project-info">
+                                        <small>Site web</small>
+
+                                        <h3>
+                                             <a href="service">
+                                                  <span>En avoir un est-il vraiment important ?</span>
+                                                  <i class="fa fa-angle-right project-icon"></i>
+                                             </a>
+                                        </h3>
+                                   </div>
+                              </div>
+
+                              <div class="item project-wrapper" data-aos="fade-up">
+                                   <img src="images/project/project-image03.jpg" class="img-fluid" alt="project image">
+
+                                   <div class="project-info">
+                                        <small>Nos équipe</small>
+
+                                        <h3>
+                                             <a href="service">
+                                                  <span>L'union fait la force</span>
+                                                  <i class="fa fa-angle-right project-icon"></i>
+                                             </a>
+                                        </h3>
+                                   </div>
+                              </div>
+
+                              <div class="item project-wrapper" data-aos="fade-up">
+                                   <img src="images/project/project-image04.jpg" class="img-fluid" alt="project image">
+
+                                   <div class="project-info">
+                                        <small>Nos méthode</small>
+
+                                        <h3>
+                                             <a href="service">
+                                                  <span>Discution-Concéption-Satisfaction</span>
+                                                  <i class="fa fa-angle-right project-icon"></i>
+                                             </a>
+                                        </h3>
+                                   </div>
+                              </div>
+
+                              <div class="item project-wrapper" data-aos="fade-up">
+                                   <img src="images/project/project-image05.jpg" class="img-fluid" alt="project image">
+
+                                   <div class="project-info">
+                                        <small>Video</small>
+
+                                        <h3>
+                                             <a href="service">
+                                                  <span>Astuce du jour</span>
+                                                  <i class="fa fa-angle-right project-icon"></i>
+                                             </a>
+                                        </h3>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- TESTIMONIAL -->
+     <section class="testimonial section-padding">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-6 col-md-5 col-12">
+                        <div class="contact-image" data-aos="fade-up">
+
+                          <img src="images/female-avatar.png" class="img-fluid" alt="website" style="border-radius: 50%;">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-7 col-12">
+                      <h4 class="my-5 pt-3" data-aos="fade-up" data-aos-delay="100">Directeur Generale</h4>
+
+                      <div class="quote" data-aos="fade-up" data-aos-delay="200"></div>
+
+                      <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Croyez en vous-même et en tout ce que vous êtes</h2>
+
+                      <p data-aos="fade-up" data-aos-delay="400">
+                        <strong>Antonio Randrianarison</strong>
+
+                        <span class="mx-1">/</span>
+
+                        <small>Digital Agency (CEO)</small>
+                      </p>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+            <h1 class="text-white" data-aos="fade-up" data-aos-delay="100">Avitech vous propose le <strong>meilleur</strong> des sites.</h1>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="my-4">Contact Info</h4>
+
+            <p class="mb-1">
+              <i class="fa fa-phone mr-2 footer-icon"></i> 
+              +261 34 21 208 03
+            </p>
+
+            <p>
+              <a href="#">
+                <i class="fa fa-envelope mr-2 footer-icon"></i>
+                avitech@company.com
+              </a>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
+            <h4 class="my-4">Our Studio</h4>
+
+            <p class="mb-1">
+              <i class="fa fa-home mr-2 footer-icon"></i> 
+              Antananarivo-Madagascar
+            </p>
+          </div>
+
+          <div class="col-lg-4 mx-lg-auto text-center col-md-8 col-12" data-aos="fade-up" data-aos-delay="400">
+            <p class="copyright-text">Copyright &copy; 2020 Your Company
+            <br>
+            <a rel="nofollow noopener" href="https://templatemo.com">Design: TemplateMo</a></p>
+          </div>
+
+          <div class="col-lg-4 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
+            
+            <ul class="footer-link">
+              <li><a href="#">Stories</a></li>
+              <li><a href="#">Work with us</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
+            <ul class="social-icon">
+              <li><a href="#" class="fa fa-instagram"></a></li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-dribbble"></a></li>
+              <li><a href="#" class="fa fa-behance"></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/aos.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+     <script src="js/script.js"></script>
+
+</body>
 </html>
